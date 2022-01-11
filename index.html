@@ -8,6 +8,13 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,300&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -17,6 +24,7 @@
             <div class="navbar">
                 <h3 class="logo">Roqia</h3>
                 <nav>
+                    <i class="fas fa-bars toggle-menue"></i>
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About Us</a></li>
@@ -29,52 +37,67 @@
     </header>
     <!-- home -->
 
-    <section id="home">
-        <div class="sec">
-            <div class="col-2">
-                <img src="images/photo.jpg" alt="roqia">
-            </div>
-            <div class="col-2">
-
-                <h1>Ruqaiah Saif</h1>
-                <h3>Full Stack Devloper </h3>
-                <p>I'm a full-stack developer specialised in frontend and backend development for complex scalable web
-                    apps.
-                </p>
+    <section id="home" class="bk" class="section-hight">
+        <div class="continer">
+            <div class="sec">
+                <div class="col-2">
+                    <div class="rimg">
+                        <img src="images/photo.jpg" alt="roqia">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="rname">
+                        <h2>Ruqaiah Saif</h2>
+                        <h3>Wep Devloper </h3>
+                        <p>I'm a full-stack developer specialised in frontend and backend development for complex
+                            scalable
+                            web
+                            apps.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!-- About Us -->
-    <section id="about">
+    <section id="about" class="section-hight">
         <div class="continer">
+            <h1 class="hd">About us</h1>
             <section class="sec1">
-                <div class="col-skill">
-                    <h1 class="hd">skils</h1>
+                <div class="col-2">
+                    <div class="myskill">
+                        <p>skils</p>
 
-                    <h4>html</h4>
-                    <div class="progress">
-                        <div class="progress__bar" style="width:80%"></div>
+                        <h4>HTML</h4>
+                        <div class="progress">
+                            <div class="progress__bar" style="width:80%"></div>
+                        </div>
+
+
+                        <h4>CSS</h4>
+                        <div class="progress">
+                            <div class="progress__bar" style="width:80%"></div>
+                        </div>
+
+
+                        <h4>JS</h4>
+                        <div class="progress">
+                            <div class="progress__bar" style="width:60%"></div>
+                        </div>
                     </div>
-
-
-                    <h4>css</h4>
-                    <div class="progress">
-                        <div class="progress__bar" style="width:80%"></div>
-                    </div>
-
-
-                    <h4>js</h4>
-                    <div class="progress">
-                        <div class="progress__bar" style="width:60%"></div>
-                    </div>
-
                 </div>
-                <div class="col-x">
+                <div class="col-2">
                     <div class="con">
-                        <h1 class="hd">Experinces</h1>
+                        <div class="myskill">
+                            <p>Experinces</p>
+                            <div class="ex">
+                                <div><i class="fas fa-caret-right"></i>I work as Freelancer</div>
+                                <div><i class="fas fa-caret-right"></i>I work as Web Devloper </div>
+                                <div><i class="fas fa-caret-right"></i>I work as App Devloper</div>
 
-                        <p>I work as freelancer
-                        </p>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
 
@@ -82,55 +105,54 @@
         </div>
     </section>
     <!-- Services -->
-    <section id="services">
+    <section id="services" class="section-hight1">
         <div class="continer">
             <!-- <div class="sec">
                 <div class="col-4"> -->
+
             <h1 class="hd">services</h1>
+
             <div class="services-content">
 
-                <div class="d1 ser">
+                <div class="d1">
 
-                    <div class="img-con">
-                        <img src="images/ux.png" alt="">
-                    </div>
-                    <h1>UX&UI</h1>
+                    <i class="fab fa-android"></i>
+                    <h1>App Devloper </h1>
 
                 </div>
-                <div class="d1 ser">
+                <div class="d1">
 
+                    <i class="fas fa-laptop-code"></i>
 
-                    <div class="img-con">
-                        <img src="images/gd.jpg" alt="">
-                    </div>
-                    <h1>Graghic Design</h1>
+                    <h1>Web Devloper</h1>
 
                 </div>
-                <div class="d1 ser">
+                <div class="d1 ">
+                    <i class="fas fa-desktop fa-x3"></i>
 
-                    <div class="img-con">
-                        <img src="images/wf.png" alt="">
-                    </div>
                     <h1>Web Design</h1>
 
                 </div>
             </div>
         </div>
-
+    </section>
+    <section id="services" class="section-hight">
         <div class="continer">
-            <h1 class="hd">Previous Work</h1>
+            <h1 class="hd">
+                Previous Work
+            </h1>
             <div class="services-content">
-                <div class="d1">
+                <div class="d2">
                     <div class="img-con">
                         <img src="images/img1.JPG" alt="">
                     </div>
                 </div>
-                <div class="d1">
+                <div class="d2">
                     <div class="img-con">
                         <img src="images/img2.JPG" alt="">
                     </div>
                 </div>
-                <div class="d1">
+                <div class="d2">
                     <div class="img-con">
                         <img src="images/img3.JPG" alt="">
                     </div>
@@ -143,8 +165,10 @@
     <section id="contact">
         <div class="continer">
             <div class="sec">
-                <div class="contact">
-                    <h1 class="hd">contact us</h1>
+                <div class="contact bk">
+                    <h1 class="hd">
+                        contact us
+                    </h1>
                     <form action="action_page.php" class="form-contact">
 
                         <label for="fname">First Name</label>
@@ -155,7 +179,7 @@
 
                         <label for="country">Country</label>
                         <select id="country" name="country">
-                            <option value="australia">Australia</option>
+                            <option value="australia">Yemen</option>
                             <option value="canada">Canada</option>
                             <option value="usa">USA</option>
                         </select>
@@ -170,19 +194,20 @@
                 </div>
             </div>
         </div>
-        <div class="continer">
-
-            <div class="social">
-                <!-- Add font awesome icons -->
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-google"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-            </div>
-        </div>
-
-
     </section>
+    <div class="continer">
+
+        <div class="social">
+            <!-- Add font awesome icons -->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+        </div>
+    </div>
+
+
+
     <!-- Footer -->
     <footer>
 
