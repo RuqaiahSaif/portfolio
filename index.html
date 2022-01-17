@@ -26,14 +26,15 @@
 
                 <nav>
                     <i class="fas fa-bars toggle-menue"></i>
-                    <ul>
+                    <ul id="dropmenue">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#contact">Contact Us</a></li>
                     </ul>
                 </nav>
-                <button onclick="myFunction()">dark mode</button>
+                <i class="fas fa-moon" id="moon" onclick="myFunction()"></i>
+                <!-- <button onclick="myFunction()">dark mode</button> -->
             </div>
         </div>
     </header>
@@ -144,7 +145,7 @@
             <div class="services-content">
                 <div class="d2">
                     <div class="img-con">
-                        <img src="images/img1.JPG" onmouseover="OnMouseIn (this)" onmouseout="OnMouseOut (this)" alt="">
+                        <img src="images/img1.JPG" onmouseover="OnMouseIn (this)" onmouseout="OnMouseOut (this)" alt="" style="height:300px;">
                     </div>
                 </div>
                 <div class="d2">
@@ -216,8 +217,20 @@
         function myFunction() {
             var element = document.body;
             element.classList.toggle("dark-mode");
+            var moon = document.getElementById("moon");
+            moon.classList.toggle("fa-sun");
         }
+        let tmenu = document.querySelector(".toggle-menue");
+        let tdropmenue = document.getElementById("dropmenue");
+        tmenu.addEventListener('click', () => {
+            if (tdropmenue.style.display === "none") {
+                tdropmenue.style.display = "flex";
+            }
+            else {
+                tdropmenue.style.display = "none";
+            }
 
+        });
         // Get the value of the input field with id="numb"
         let sendBtn = document.getElementById("send");
         let username = document.getElementById("fname");
@@ -242,17 +255,21 @@
 
             }
 
-
+            else {
+                return false;
+            }
         });
 
 
         function OnMouseIn(elem) {
             elem.style.width = "320px";
             elem.style.hight = "320px";
+            elem.style.opacity = 1;
         }
         function OnMouseOut(elem) {
             elem.style.width = "300px";
             elem.style.hight = "300px";
+            elem.style.opacity = 0.7;
         }
 
     </script>
