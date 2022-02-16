@@ -1,43 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,300&display=swap"
-        rel="stylesheet">
-</head>
+<%- include('../partials/head.ejs'); %>
 
 <body>
     <!-- nav -->
-    <header>
-        <div class="continer">
-            <div class="navbar">
-                <h3 class="logo">Roqia</h3>
-
-                <nav>
-                    <i class="fas fa-bars toggle-menue"></i>
-                    <ul id="dropmenue">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
-                    </ul>
-                </nav>
-                <i class="fas fa-moon" id="moon" onclick="myFunction()"></i>
-                <!-- <button onclick="myFunction()">dark mode</button> -->
-            </div>
-        </div>
-    </header>
+    <%- include('../partials/header.ejs'); %>
     <!-- home -->
 
     <section id="home" class="bk" class="section-hight">
@@ -206,13 +174,7 @@
 
 
     <!-- Footer -->
-    <footer>
-
-
-        <p> &copy; 2022 Ruqaiah Saif - All Rights Reserved.</p>
-
-
-    </footer>
+    <%- include('../partials/footer.ejs'); %>
     <script>
         function myFunction() {
             var element = document.body;
